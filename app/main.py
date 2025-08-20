@@ -3,6 +3,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile
 import asyncio
+import os
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")          # экспортируйте переменную 
 
@@ -79,3 +80,4 @@ async def handle_get_request(message: types.Message):
 
 if __name__ == "__main__":
     asyncio.run(dp.start_polling(bot))
+
