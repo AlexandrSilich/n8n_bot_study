@@ -44,11 +44,11 @@ docker stop n8n-bot
 ```
 ##### Удаление контейнера
 ```bash
-docker rm n8n-bot
+docker rm n8n-bot -f
 ```
 ##### Удаление образа
 ```bash
-docker rmi n8n-bot:latest
+docker rmi n8n-bot:latest -f
 ```
 
 #### 📝 Дополнительные полезные команды
