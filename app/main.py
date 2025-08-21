@@ -42,7 +42,7 @@ async def start_menu(message: types.Message):
     
     # Вариант с локальной картинкой (положи файл logo.jpg в папку с ботом)
     try:
-        photo = FSInputFile("../images/logo.jpg")  
+        photo = FSInputFile("images/logo.jpg")  
         await message.answer_photo(
             photo=photo,
             caption=welcome_text,
@@ -80,6 +80,7 @@ async def handle_get_request(message: types.Message):
 
 if __name__ == "__main__":
     asyncio.run(dp.start_polling(bot))
+
 
 
 
