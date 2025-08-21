@@ -1,5 +1,13 @@
 ### ▶️ n8n-bot — Инструкция по установке и запуску
 
+
+##### Цикл 1
+Удаление старых артефактов, скачивание актуального проекта с github, сборка образа и запуск контейнера:
+```bash
+docker rm n8n-bot -f && docker rmi n8n-bot:latest -f && git pull && docker build --network=host -t n8n-bot:latest . && docker run -d --name n8n-bot n8n-bot:latest
+```
+
+
 #### Сборка образа
 
 ##### Стандартная сборка
