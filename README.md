@@ -4,7 +4,7 @@
 ##### Цикл 1
 Удаление старых артефактов, скачивание актуального проекта с github, сборка образа и запуск контейнера:
 ```bash
-docker rm n8n-bot -f && docker rmi n8n-bot:latest -f && git pull && docker build --network=host -t n8n-bot:latest . && docker run -d --name n8n-bot n8n-bot:latest
+docker rm n8n-bot -f && docker rmi n8n-bot:latest -f && git pull && docker build --network=host -t n8n-bot:latest . && docker run -d --name n8n-bot -v ~/n8n_study_bot/images:/bot/images --restart=unless-stopped n8n-bot:latest
 ```
 
 
@@ -28,7 +28,7 @@ docker build -t n8n-bot https://github.com/AlexandrSilich/n8n_bot_study.git###ma
 
 ##### Первый запуск в фоне с назначением имени контейнеру
 ```bash
-docker run -d --name n8n-bot n8n-bot:latest
+docker run -d --name n8n-bot -v ~/n8n_study_bot/images:/bot/images --restart=unless-stopped n8n-bot:latest
 ```
 ##### Повторные запуски
 ```bash
