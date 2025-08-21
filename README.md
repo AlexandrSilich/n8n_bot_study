@@ -76,6 +76,13 @@ docker system prune
 docker run -it --name n8n-bot-debug n8n-bot:latest /bin/bash
 ```
 
+#### ▶️ Git комманды
+
+Если рассинхрон версий файлов на сервере линукс и github, тогда принудительно счиатаем, что главная версия проекта на github
+```bash
+git reset --hard
+```
+
 #### ⚠️ Решение проблем
 
 Проблемы с сетевым доступом при сборке
