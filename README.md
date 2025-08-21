@@ -16,7 +16,7 @@ docker build --network=host -t n8n-bot:latest .
 docker build -t n8n-bot https://github.com/AlexandrSilich/n8n_bot_study.git###main
 ```
 
-##### Запуск контейнера
+#### Запуск контейнера
 
 ##### Первый запуск в фоне с назначением имени контейнеру
 ```bash
@@ -41,7 +41,6 @@ docker stop n8n-bot
 ```bash
 docker rm n8n-bot
 ```
-
 ##### Удаление образа
 ```bash
 docker rmi n8n-bot:latest
