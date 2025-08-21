@@ -22,10 +22,12 @@ docker build -t n8n-bot https://github.com/AlexandrSilich/n8n_bot_study.git###ma
 ```bash
 docker run -d --name n8n-bot n8n-bot:latest
 ```
-##### Повторные запуски в фоне
+##### Повторные запуски
 ```bash
-docker start n8n-bot -d n8n-bot:latest
+docker start n8n-bot
+
 ```
+docker start всегда запускает в фоне
 docker run vs docker start
   
 docker run - создает НОВЫЙ контейнер
