@@ -1,8 +1,8 @@
 ### ▶️ n8n-bot — Инструкция по установке и запуску
 
-#### <span style="color: red;">Сборка образа</span>
+#### Сборка образа
 
- Стандартная сборка
+ <span style="color: red;">Стандартная сборка</span>
 ```bash
 docker build -t n8n-bot:latest .
 ```
