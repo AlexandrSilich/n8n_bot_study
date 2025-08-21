@@ -2,15 +2,15 @@
 
 ## Сборка образа
 
-### Стандартная сборка
+#### Стандартная сборка
 ```bash
 docker build -t n8n-bot:latest .
 ```
 
-### Сборка с доступом к хостовой сети (для сложных сетевых условий)
+#### Сборка с доступом к хостовой сети (для сложных сетевых условий)
 docker build --network=host -t n8n-bot:latest .
 
-### Сборка образа удаленно с GitHub репозитория
+#### Сборка образа удаленно с GitHub репозитория
 docker build -t n8n-bot https://github.com/AlexandrSilich/n8n_bot_study.git###main
 
 
