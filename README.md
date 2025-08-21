@@ -24,8 +24,10 @@ docker run -d --name n8n-bot n8n-bot:latest
 ```
 ##### Повторные запуски в фоне
 ```bash
-docker run -d n8n-bot:latest
+docker start n8n-bot -d n8n-bot:latest
 ```
+docker run vs docker start
+docker run - создает НОВЫЙ контейнер
 
 #### Управление контейнерами
 
