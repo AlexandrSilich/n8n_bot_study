@@ -43,7 +43,7 @@ async def start_menu(message: types.Message):
 
     # Вариант с локальной картинкой (положи файл logo.jpg в папку с ботом)
     try:
-        photo = FSInputFile("images/logo.jpg")
+        photo = FSInputFile("../images/logo.jpg")
         """
         # Вариант с ссылкой на файл в Google Drive
         photo_url = "https://drive.google.com/uc?id=YOUR_FILE_ID"
@@ -187,4 +187,5 @@ def convert_gdrive_url(share_url):
 
 if __name__ == "__main__":
     asyncio.run(dp.start_polling(bot))
+
 
